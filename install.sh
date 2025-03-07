@@ -11,4 +11,4 @@ wget https://github.com/pytorch/vision/archive/refs/tags/v0.11.1.tar.gz -O torch
 mkdir -p torchvision && tar -xzf "torchvision-0.11.1.tar.gz" --strip-components=1 -C torchvision
 
 cd torchvision
-sudo python3 setup.py install 
+sudo bash -c "source $HOME/python/bin/activate && python setup.py install"
